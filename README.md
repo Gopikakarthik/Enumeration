@@ -76,10 +76,6 @@ Top level domain expansion
 ![8](https://github.com/Gopikakarthik/Enumeration/assets/121235427/68291e51-f9ae-482c-bcbe-42cddd85efb2)
 
 
-
-
-
-
 ##dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
 
@@ -98,10 +94,14 @@ This program is useful for pentesters, ethical hackers and forensics experts. It
 
 ##smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
+![10](https://github.com/Gopikakarthik/Enumeration/assets/121235427/769b7a95-3c7a-49a5-9b3f-3784fb358048)
+
 
 In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
+![11](https://github.com/Gopikakarthik/Enumeration/assets/121235427/5f564e93-3043-4116-b8fd-b1bf5ae10fa9)
 
 select any username in the first column of the above file and check the same
+![12](https://github.com/Gopikakarthik/Enumeration/assets/121235427/4aac4b06-7ad7-4c3e-afe2-784dc4e643a9)
 
 
 #Telnet for smtp enumeration
@@ -110,18 +110,18 @@ telnet <host address> 25 to connect
 and issue appropriate commands
   
  ##Output
- ![Uploading 13.png…]()
+ ![13](https://github.com/Gopikakarthik/Enumeration/assets/121235427/0783f5d2-1b57-4e42-93f1-bdd5b5c43c5b)
+
 
   
-  
-
 ## nmap –script smtp-enum-users.nse <hostname>
 
 The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server by issuing the VRFY, EXPN or RCPT TO commands. The goal of this script is to discover all the user accounts in the remote system.
 
 
 ## OUTPUT:
-![Uploading 14.png…]()
+![14](https://github.com/Gopikakarthik/Enumeration/assets/121235427/903079f2-6c90-4aee-b637-aeef27a55bc9)
+
 
 
 
